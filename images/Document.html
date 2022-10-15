@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5500/test07.html?# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>텍스트 관련 인풋 타입</h2>
+    <form action="http://127.0.0.1:5500/test07.html?#">
+        <label for="txtIp">text</label> <br>
+        <input id="txtIp" type="text" placeholder="5자 이하" maxlength="8">
+
+        <br><br>
+        <!-- 문자 관련 인풋 -->
+
+        <label for="pwdIp">password</label> <br>
+        <input id="pwdIp" type="password" placeholder="4자 이상" minlength="4">
+
+        <br><br>
+
+        <label for="srchIp">search</label> <br>
+        <input id="srchIp" type="search" placeholder="대상 입력">       
+        <br><br>
+
+        <label for="tIIp">tel</label> <br>
+        <input id="tIIp" type="tel" placeholder="전화번호">
+        <br><br>
+
+        <button type="submit">제출</button>
+
+    </form>
+
+    <!-- 숫자 관련 인풋 -->
+
+    
+
+        <form action="http://127.0.0.1:5500/test07.html?#">
+            <label for="" "numip"="">number</label> <br>
+            <input id="numIp" type="number" min="0" max="10">
+            <br><br>
+
+            <label for="" "rgip"="">range</label> <br>
+            <input id="rgIp" type="range" step="10" min="100" max="200">
+
+            <br><br>
+
+            <label for="dtIp">date</label>
+            <input id="dtIp" type="date" min="2022-01-01" maxx="2031-12-31">
+
+            <br><br>
+        </form>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+<!-- Code injec--></body></html>

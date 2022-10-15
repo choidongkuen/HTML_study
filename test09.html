@@ -1,0 +1,57 @@
+<!-- 기타 인풋 타입 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action = "#">
+        <label for = "fileIp">file</label> <br>
+        <input
+            id = "fileIp"
+            type = "file"
+            <!-- 이용가능한 파일 형식 -->
+            accept ="image/png, image/jpeg"
+            <!-- 여러개를 함께 올릴 수 있음 드레그 가능-->
+            multiple
+        >
+
+        <br><br>
+
+
+
+        <label for = "hdnIp">hidden</label> <br>
+        <input
+            <!-- 숨겨진 입력 창 -->
+            id = "hdnIp"
+            type="hidden"
+        >
+    
+    </form>
+
+    <br><br><br>
+
+    <form action = "#">
+        <label for = "emlIp">email</label> <br>
+        <input 
+            id = "emlIp"
+            type = "email"
+
+        >
+        <br>
+
+        <button type = "submit">제출</button>
+    
+    </form>
+
+
+        
+
+    <hr>
+
+    
+</body>
+</html>
