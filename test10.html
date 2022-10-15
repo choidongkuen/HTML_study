@@ -1,0 +1,90 @@
+<!-- 사용자에게 입력받기 4 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action = "#">
+        <label for = "valIp">value</label> <br>
+        <input
+            id = "valIp"
+            type = "text"
+            value = "지정됨"
+        >
+        <br><br>
+
+        <label for = "afIp">autofocus</label><br>
+        <input  
+            id="afIp"
+            type="text"
+            <!-- placeholder= "안내문" -->
+            placeholder="자동 포커스됨"
+            <!-- autofocus = 새로고침했을때 자동 포커싱 -->
+            autofocus
+        >
+        <br><br>
+
+        <label for = "roIp">readonly</label><br>
+        <input
+            id="roIp"
+            type="text"
+            <!-- value="default로 지정되는 값" -->
+            value="읽기만 가능, 전송됨"
+            <!-- readonly = 읽기만 가능 -->
+            readonly
+        >
+        <br><br>
+
+        <label for = "rqIp">required</label>  <br>
+        <input
+            id="rgIp"
+            type="text"
+            placeholder="필수입력!"
+            <!-- required = 꼭 입력해야하는 부분 -->
+            required
+        >
+
+        <br><br>
+        <!-- readonly 값 전송, disabled 값 전송 x -->
+
+        <label for = "daIp">disabled</label> <br>
+        <input
+            type = "daIp"
+            type = "text"
+            placeholder="입력불가, 전송안됨"
+            disabled
+        >
+
+        <br><br>
+
+        <input
+            type = "radio"
+            name = "fruit"
+            id = "f_apple"
+            value = "apple"
+            checked
+        >
+        <label for = "f_apple">사과</label>
+        <input
+            type = "radio"
+            name = "fruit"
+            id = "f_grape"
+            value = "grape"
+
+        >
+        <label for = "f_grape">포도</label>
+
+        <br>
+
+        <button type = "submit">제출</button>
+
+
+    </form>
+</body>
+</html>
