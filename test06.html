@@ -9,25 +9,70 @@
     <title>Document</title>
 </head>
 <body>
-    <form
-        action="./01-result.html"
-        method="get"
+    <h2>일반적인 입력 형식</h2>
+    <form action = "./01-result.html"
+    method = "get"
     >
 
-        <label for="name">이름</label>
-        <input id="name" name="my-name" type="text">
+    <label for = "name">이름</label>
+    <input id = "name" name = "my-name" type = "text">
 
-        <br><br>
+    <br><br>
+
+    <label for = "age">나이</label>
+    <input id = "age" name = "my-age" type = "number">
 
 
-        <label for="age">나이</label>
-        <input id="age" name="my-age" type="number">
+    <br><br><br>
 
-        <br><br>
+    <button type = "submit">제출</button>
+    <button type = "reset">초기화</button>
 
-        <button type="submit">제출</button>
-        <button type="reset">초기화</button>
+</form>
 
+</body>
+
+
+<body>
+    <h2>폼 안의 요소들 그룹으로 묶기</h2>
+    <form>
+        <!-- fileldset : 그룹으로 묶기 -->
+        <fieldset>
+            <legend>반장</legend>
+            <label for = "name">이름</label>
+            <input id = "name" name = "name_1" type = "text">
+            <br><br>
+            <label for = "age">나이</label>
+            <input id = "age" name = "age_1" type = "number">
+            <br><br>
+        </fieldset>
+        <br>
+
+
+        <fieldset>
+            <legend>부반장</legend>
+            <label for = "name">이름</label>
+            <input id = "name" name = "name_2" type = "text">
+            <br><br>
+
+            <label for = "age">나이</label>
+            <input id = "age" name = "age_2" type = "number">
+
+        </fieldset>
+        <br>
+
+        <fieldset form = "classForm" disabled>
+            <legend>서기</legend>
+            <label for = "name">이름</label>
+            <input id = "name" name = "name_3" type = "text">
+            <br><br>
+
+            <label for = "age">나이</label>
+            <input id = "age" name = "age_3" type = "number">
+
+        </fieldset>
+
+    
     </form>
 </body>
 </html>
