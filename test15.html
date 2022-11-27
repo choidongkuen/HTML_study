@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>와이파이정보구하기</title>
+    <style>
+        /* table, th, td {
+        border: 1px solid;
+        } */
+
+        table{
+        width: 100%; 
+        }
+
+        td,th{
+        text-align: center; 
+        }
+    </style>
+</head>
+<body>
+
+<h1>와이파이 정보 구하기</h1>
+
+<!-- 입력 칸 -->
+<lable for = "LAT">LAT: </lable>
+<input text 
+    id = "LAT"
+    type = "text"
+    placeholder="위도를 입력해주세요"
+>
+<lable for = "LNT">LNT: </lable>
+<input text 
+    id = "LNT"
+    type = "text"
+    placeholder="경도를 입력해주세요"
+>
+<!-- 입력 칸 -->
+
+<table>
+        <!-- <caption>항목</caption> -->
+        <tr style="background-color:blanchedalmond">
+            <th text-align: center>거리(km)</th>
+            <th>관리번호</th>
+            <th>자치구</th>
+            <th>와이파이 명</th>
+            <th>도로명 주소</th>
+            <th>상세 주소</th>
+            <th>설치 위치(층)</th>
+            <th>설치유형</th>
+            <th>설치기관</th>
+            <th>서비스구분</th>
+            <th>망종류</th>
+            <th>설치년도</th>
+            <th>실내외구분</th>
+            <th>WIFI접속환경</th>
+            <th>x좌표</th>
+            <th>y좌표</th>
+            <th>작업일자</th>
+        </tr>
+        <br><br>
+
+        <tr>
+            <td colspan="17">위치 정보를 입력한 후에 조회해 주세요</td>
+        </tr>
+</table>
+</body>
+</html>
